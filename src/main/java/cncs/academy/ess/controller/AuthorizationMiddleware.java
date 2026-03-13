@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 public class AuthorizationMiddleware implements Handler {
     private static final Logger logger = LoggerFactory.getLogger(AuthorizationMiddleware.class);
     private final UserRepository userRepository;
-    private Enforcer enforcer = new Enforcer("model.conf", "policy.csv");
+    private Enforcer enforcer = new Enforcer("src/main/resources/casbin/model.conf", "src/main/resources/casbin/policy.csv");
 
     public AuthorizationMiddleware(UserRepository userRepository) {
         this.userRepository = userRepository;

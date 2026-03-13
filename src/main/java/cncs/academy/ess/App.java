@@ -24,8 +24,8 @@ public class App {
 
         SslPlugin plugin = new SslPlugin(conf -> {
             conf.pemFromPath(
-                    "C:\\ssl\\cert.pem",
-                    "C:\\ssl\\key.pem",
+                    "src/main/resources/ssl/cert.pem",
+                    "src/main/resources/ssl/key.pem",
                     "sesaramlab2");
             conf.insecurePort = 7100;
             conf.securePort = 443;
