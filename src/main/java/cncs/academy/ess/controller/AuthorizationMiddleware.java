@@ -30,6 +30,7 @@ public class AuthorizationMiddleware implements Handler {
         if (ctx.method() == HandlerType.OPTIONS) {
             // Optionally: validate if it is a legitimate CORS preflight
             return;
+
         }
 
         // Allow unauthenticated requests to /user (register) and /login
