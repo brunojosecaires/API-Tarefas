@@ -25,6 +25,7 @@ class InMemoryUserRepositoryTest {
 
         // Assert
         assertEquals(user.getUsername(), savedUser.getUsername());
+        // teste
         assertEquals(user.getPassword(), savedUser.getPassword());
     }
 
