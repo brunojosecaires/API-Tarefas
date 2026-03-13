@@ -1,0 +1,19 @@
+#Roles
+g, Admin, Share
+g, Share, Base
+#Users
+g, admin, Admin
+g, tiago3, Base
+g, tiago10, Share
+#Permissões rotas
+#p, Admin, /user, POST
+#p, Admin, /user/:id, GET
+p, Base, /user, POST
+p, Base, /user/:id, GET
+p, Base, /todolist, GET
+p, Base, /todolist, POST
+p, Base, /todolist/:id, GET
+p, Base, /todo/item, POST
+p, Base, /todo/:listid/tasks, GET
+p, Base, /todo/:listid/tasks/:taskid, GET
+p, Share, /todolist/:listid/share, POST
